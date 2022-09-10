@@ -281,4 +281,72 @@ ul {
 =============== 
 Navbar
 ===============
-*//*# sourceMappingURL=main.css.map */
+*/
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.nav {
+  width: 90vw;
+  max-width: var(--max-width);
+}
+.nav__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6rem;
+}
+.nav__header img {
+  width: 200px;
+}
+.nav__logo {
+  display: flex;
+  align-items: center;
+}
+.nav__btn {
+  padding: 0.15rem 0.75rem;
+}
+.nav__btn i {
+  font-size: 1.25rem;
+}
+.nav__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+.nav .show-links {
+  height: 23.9375rem;
+}
+.nav__link {
+  width: 100%;
+  text-align: center;
+  display: block;
+  color: var(--grey-900);
+  padding: 1rem 0;
+  font-size: 1.25rem;
+  letter-spacing: var(--letterSpacing);
+  text-transform: capitalize;
+  border-top: 1px solid var(--grey-500);
+  transition: var(--transition);
+}
+.nav__link a {
+  padding: 0.15rem 1rem;
+}
+
+footer {
+  background: var(--black);
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+footer a, footer span {
+  color: var(--primary-500);
+}/*# sourceMappingURL=main.css.map */

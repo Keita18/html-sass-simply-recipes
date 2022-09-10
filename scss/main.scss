@@ -1,1 +1,83 @@
 @import 'config';
+@import 'index';
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+    width: 90vw;
+    max-width: var(--max-width);
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 6rem;
+
+        & img {
+            width: 200px;
+        }
+
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+    }
+
+    &__btn {
+        padding: 0.15rem .75rem;
+
+        & i {
+            font-size: 1.25rem;
+        }
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        height: 0;
+        overflow: hidden;
+        transition: var(--transition);
+    }
+
+    .show-links {
+        height: 23.9375rem;
+    }
+    
+
+    &__link {
+        width: 100%;
+        text-align: center;
+        display: block;
+        color: var(--grey-900);
+        padding: 1rem 0;
+        font-size: 1.25rem;
+        letter-spacing: var(--letterSpacing);
+        text-transform: capitalize;
+        border-top: 1px solid var(--grey-500);
+        transition: var(--transition);
+
+        a {
+            padding: 0.15rem 1rem;
+        }
+    }
+}
+
+footer {
+    background: var(--black);
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+   
+    a, span {
+        color: var(--primary-500);
+    }
+}
