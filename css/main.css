@@ -284,6 +284,7 @@ Navbar
 */
 .page {
   width: 90vw;
+  max-width: var(--max-width);
   padding-top: 2rem;
   min-height: calc(100vh - 10rem);
   margin: auto;
