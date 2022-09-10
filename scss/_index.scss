@@ -10,6 +10,7 @@
     height       : 40vh;
     background   : url('/assets/main.jpeg') center/cover;
     border-radius: var(--borderRadius);
+    margin-bottom: 2rem;
 
     &__container {
         border-radius  : var(--borderRadius);
@@ -31,8 +32,6 @@
 .recipes {
     display: grid;
     gap    : 2rem 1rem;
-    margin-top           : 2rem;
-
 
     &__tags {
         order         : 1;

@@ -294,6 +294,7 @@ Navbar
   height: 40vh;
   background: url("/assets/main.jpeg") center/cover;
   border-radius: var(--borderRadius);
+  margin-bottom: 2rem;
 }
 .hero__container {
   border-radius: var(--borderRadius);
@@ -313,7 +314,6 @@ Navbar
 .recipes {
   display: grid;
   gap: 2rem 1rem;
-  margin-top: 2rem;
 }
 .recipes__tags {
   order: 1;
