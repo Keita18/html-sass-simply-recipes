@@ -1,0 +1,66 @@
+@media screen and (min-width: 576px) {
+    .recipes__cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .recipes__card-img {
+        height: 10rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .nav {
+        display: flex;
+        gap: 2rem;
+
+        &__btn {
+            display: none;
+        }
+
+        &__links {
+            height: auto !important;
+            flex-direction: row;
+            width: 100%;
+        }
+
+        &__link {
+            width: min-content;
+            margin-right: 1rem;
+            font-size: 1rem;
+            border: none;
+        }
+
+        &__contact {
+            margin-right: 0;
+            margin-left: auto;
+        }
+    }
+
+    .hero__text h1 {
+        font-size: 4rem;
+        margin-bottom: 0;
+    }
+
+    .recipes {
+        grid-template-columns: 200px 1fr;
+        gap: 1rem;
+
+        &__tags {
+            order: 0;
+
+            &--list {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .recipes__cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .recipes__card-img {
+        height: 10rem;
+    }
+}

@@ -1,0 +1,94 @@
+.page {
+    width      : 90vw;
+    padding-top: 2rem;
+    min-height : calc(100vh - (6rem + 4rem));
+    margin     : auto;
+}
+
+.hero {
+    height       : 40vh;
+    background   : url('/assets/main.jpeg') center/cover;
+    border-radius: var(--borderRadius);
+
+    &__container {
+        border-radius  : var(--borderRadius);
+        height         : 100%;
+        width          : 100%;
+        background     : rgba(0, 0, 0, 0.4);
+        display        : flex;
+        flex-direction : column;
+        align-items    : center;
+        justify-content: center;
+    }
+
+    &__text {
+        color     : var(--white);
+        text-align: center;
+    }
+}
+
+.recipes {
+    display: grid;
+    gap    : 2rem 1rem;
+    margin-top           : 2rem;
+
+
+    &__tags {
+        order         : 1;
+        display       : flex;
+        flex-direction: column;
+        padding-bottom: 3rem;
+
+        h4 {
+            margin-bottom: .5rem;
+            font-weight  : 500;
+        }
+
+        &--list {
+            display              : grid;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            a {
+                text-transform: capitalize;
+                display       : block;
+                color         : var(--grey-500);
+                transition    : var(--transition);
+            }
+
+            a:hover {
+                color: var(--primary-500);
+            }
+        }
+    }
+
+    &__cards {
+        display              : grid;
+        grid-template-columns: 1fr;
+        gap                  : 2rem 1rem;
+        padding-bottom       : 3rem;
+    }
+
+    &__card {
+        &-img {
+            height       : 15rem;
+            margin-bottom: 1rem;
+            border-radius: var(--borderRadius);
+        }
+
+        h5 {
+            margin-bottom: 0;
+            margin-top   : 0.25rem;
+            line-height  : 1;
+            color        : var(--grey-700);
+        }
+
+        p {
+            margin-bottom : 0;
+            line-height   : 1;
+            color         : var(--grey-500);
+            margin-top    : 0.5rem;
+            letter-spacing: var(--letterSpacing);
+        }
+    }
+}
+
