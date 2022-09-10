@@ -63,4 +63,14 @@
     .recipes__card-img {
         height: 10rem;
     }
+
+    .about {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 400px;
+        align-items: center;
+
+        &-img {
+            height: 100%;
+        }
+    }
 }

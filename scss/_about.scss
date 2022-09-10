@@ -1,0 +1,21 @@
+.about {
+    display: grid;
+    gap: 2rem 4rem;
+    padding-bottom: 3rem;
+
+    &-img {
+        height: 300px;
+        border-radius: var(--borderRadius);
+    }
+
+    h2 {
+        font-weight: bold;
+        text-transform: none;
+    }
+}
+
+.featured {
+   &__title {
+    text-align: center;
+   }
+}

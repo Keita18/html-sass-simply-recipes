@@ -363,6 +363,24 @@ Navbar
   letter-spacing: var(--letterSpacing);
 }
 
+.about {
+  display: grid;
+  gap: 2rem 4rem;
+  padding-bottom: 3rem;
+}
+.about-img {
+  height: 300px;
+  border-radius: var(--borderRadius);
+}
+.about h2 {
+  font-weight: bold;
+  text-transform: none;
+}
+
+.featured__title {
+  text-align: center;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -488,5 +506,13 @@ footer a, footer span {
   }
   .recipes__card-img {
     height: 10rem;
+  }
+  .about {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px;
+    align-items: center;
+  }
+  .about-img {
+    height: 100%;
   }
 }/*# sourceMappingURL=main.css.map */
