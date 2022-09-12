@@ -1,0 +1,28 @@
+.tags {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-bottom: 3rem;
+}
+
+.tag {
+    text-align: center;
+    color: var(--white);
+    border-radius: var(--borderRadius);
+    background: var(--grey-500);
+    transition: var(--transition);
+    padding: 0.75rem 0;
+
+    h5 {
+        margin: 0;
+        font-weight: 500;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    &:hover {
+        background: var(--primary-500);
+    }
+}

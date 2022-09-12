@@ -395,6 +395,32 @@ Navbar
   width: 100%;
 }
 
+.tags {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding-bottom: 3rem;
+}
+
+.tag {
+  text-align: center;
+  color: var(--white);
+  border-radius: var(--borderRadius);
+  background: var(--grey-500);
+  transition: var(--transition);
+  padding: 0.75rem 0;
+}
+.tag h5 {
+  margin: 0;
+  font-weight: 500;
+}
+.tag p {
+  margin: 0;
+}
+.tag:hover {
+  background: var(--primary-500);
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -473,6 +499,9 @@ footer a, footer span {
   .recipes__card-img {
     height: 10rem;
   }
+  .tags {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 @media screen and (min-width: 992px) {
   .nav {
@@ -516,6 +545,9 @@ footer a, footer span {
   .contact {
     grid-template-columns: 1fr 450px;
     align-items: center;
+  }
+  .tags {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 @media screen and (min-width: 1200px) {
