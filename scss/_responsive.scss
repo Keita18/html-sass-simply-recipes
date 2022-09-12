@@ -53,6 +53,11 @@
             }
         }
     }
+
+    .contact {
+        grid-template-columns: 1fr 450px;
+        align-items: center;
+    }
 }
 
 @media screen and (min-width: 1200px) {

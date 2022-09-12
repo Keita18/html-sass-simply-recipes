@@ -381,6 +381,20 @@ Navbar
   text-align: center;
 }
 
+.contact {
+  display: grid;
+  gap: 2rem 3rem;
+  padding-bottom: 3rem;
+  justify-content: center;
+}
+.contact__form {
+  width: 100%;
+  margin: 0;
+}
+.contact__btn {
+  width: 100%;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -498,6 +512,10 @@ footer a, footer span {
   }
   .recipes__tags--list {
     grid-template-columns: 1fr;
+  }
+  .contact {
+    grid-template-columns: 1fr 450px;
+    align-items: center;
   }
 }
 @media screen and (min-width: 1200px) {
