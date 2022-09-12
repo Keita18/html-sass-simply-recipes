@@ -292,7 +292,7 @@ Navbar
 
 .hero {
   height: 40vh;
-  background: url("/assets/main.jpeg") center/cover;
+  background: url("../assets/main.jpeg") center/cover;
   border-radius: var(--borderRadius);
   margin-bottom: 2rem;
 }
