@@ -66,6 +66,15 @@
     .tags {
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    .recipe-hero {
+        grid-template-columns: 4fr 5fr;
+        align-items: center;
+    }
+
+    .recipes-content {
+        grid-template-columns: 2fr 1fr;
+    }
 }
 
 @media screen and (min-width: 1200px) {

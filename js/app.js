@@ -10,7 +10,6 @@ const getElement = (selector) => {
 
 const links = getElement('.nav__links')
 const navBtnDOM = getElement('.nav__btn')
-console.log(navBtnDOM)
 
 navBtnDOM.addEventListener('click', () => {
   links.classList.toggle('show-links')

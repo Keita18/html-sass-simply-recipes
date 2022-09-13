@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&family=Montserrat&display=swap");
 *,
 ::after,
 ::before {
@@ -421,6 +420,88 @@ Navbar
   background: var(--primary-500);
 }
 
+.recipe-hero {
+  display: grid;
+  gap: 3rem;
+}
+.recipe-hero__img {
+  height: 300px;
+  border-radius: var(--borderRadius);
+}
+.recipe-hero p {
+  color: var(--grey-600);
+}
+.recipe-hero__icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 2rem 0;
+  text-align: center;
+  font-size: 0.85rem;
+}
+.recipe-hero__icons i {
+  color: var(--primary-500);
+  font-size: 1.5rem;
+}
+.recipe-hero__icons h5 {
+  font-size: 0.85rem;
+  margin: 0;
+}
+.recipe-hero__icons p {
+  margin: 0;
+}
+.recipe-hero__tags {
+  display: flex;
+  font-size: 0.7em;
+  align-items: center;
+  flex-wrap: wrap;
+  font-weight: 600;
+}
+.recipe-hero__tags a {
+  background: var(--primary-500);
+  border-radius: var(--borderRadius);
+  color: var(--white);
+  padding: 0.05rem 0.5rem;
+  margin: 0 0.25rem;
+  text-transform: capitalize;
+}
+
+.recipes-content {
+  padding: 3rem 0;
+  display: grid;
+  gap: 2rem 5rem;
+}
+
+.instructions header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+.instructions header div {
+  height: 2px;
+  background: var(--grey-300);
+}
+.instructions header p {
+  color: var(--primary-500);
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0;
+}
+
+.second-column {
+  display: grid;
+  row-gap: 2rem;
+}
+.second-column p {
+  border-bottom: 2px solid var(--grey-300);
+  padding-bottom: 0.75rem;
+  color: var(--grey-700);
+}
+.second-column .tools p {
+  color: var(--primary-500);
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -548,6 +629,13 @@ footer a, footer span {
   }
   .tags {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .recipe-hero {
+    grid-template-columns: 4fr 5fr;
+    align-items: center;
+  }
+  .recipes-content {
+    grid-template-columns: 2fr 1fr;
   }
 }
 @media screen and (min-width: 1200px) {
