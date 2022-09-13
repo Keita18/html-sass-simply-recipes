@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&family=Montserrat&display=swap");
 *,
 ::after,
 ::before {
@@ -571,6 +572,14 @@ footer {
 }
 footer a, footer span {
   color: var(--primary-500);
+}
+
+.error--page {
+  text-align: center;
+  padding-top: 5rem;
+}
+.error--page h2 {
+  font-size: 9rem;
 }
 
 @media screen and (min-width: 576px) {
